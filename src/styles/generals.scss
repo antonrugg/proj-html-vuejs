@@ -16,7 +16,8 @@
     color: $title-text-color;
     transition: transform 0.2s;
     font-size: 12px;
-    
+
+
     
     &:hover {
         transform: scale(1.6);
@@ -77,3 +78,8 @@ nav ul {
     @include horizontal-list;
 }
 //end reset horizontal list nav
+
+
+.main-title{
+    font-size: 12px;
+}

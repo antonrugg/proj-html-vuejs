@@ -1,0 +1,26 @@
+[
+    {
+        "src": "choco-chip-cookies-500x638.jpg",
+        "isHover": false,
+        "isActive": false,
+        "id": 0
+    },
+    {
+        "src": "images/strawberry-jam-cookies-500x638.jpg",
+        "isHover": false,
+        "isActive": false,
+        "id": 1
+    },
+    {
+        "src": "images/cookies-with-icecream-500x638.jpg",
+        "isHover": false,
+        "isActive": false,
+        "id": 2
+    },
+    {
+        "src": "images/home-bread-500x638.jpg",
+        "isHover": false,
+        "isActive": false,
+        "id": 3
+    }
+]
