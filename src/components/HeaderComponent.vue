@@ -1,5 +1,6 @@
 <template>
   <header>
+    
     <HeaderNavBarComponent :headerLinks="headerLinks"/>
   </header>
 </template>
