@@ -1,0 +1,24 @@
+[
+    {
+        "overTitle": "fresh and tasty bakery every day",
+        "title": "The Perfect Fresh Bread",
+        "text": "Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Aliquam erat volutpat. Nullam quis sagittis nibh ac nulla id orci tempor.",
+        "buttonText": "Explore our products",
+        "id": 1
+    },
+    {
+        "overTitle": "our products",
+        "title": "All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.",
+        "text": "",
+        "buttonText": "Start Shopping",
+        "id": 2
+    },
+    {
+        "overTitle": "",
+        "title": "Find a freshly baked product perfect for you",
+        "text": "Integer a nibh vitae ex porttitor rutrum et ut velit. Etiam ac felis at leo feugiat placerat. Sed ac nulla id orci tempor convallis sed.",
+        "buttonText": "Shop All Products",
+        "id": 3
+    }
+
+]    

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderComponent :headerLinks="headerLinks" />
+    <HeaderComponent :headerLinks="headerLinks" :textSections="textSections"/>
     <MainComponent />
     <FooterComponent :footerLinks="footerLinks"/>
   </div>
@@ -14,6 +14,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 
 import headerLinks from '@/assets/data/header-nav'
 import footerLinks from '@/assets/data/footer-nav'
+import textSections from '@/assets/data/display-text'
 //imported json datas
 
 
@@ -24,7 +25,8 @@ export default {
   data(){
     return{
       headerLinks,
-      footerLinks
+      footerLinks,
+      textSections,
     }
   },
   components: {
