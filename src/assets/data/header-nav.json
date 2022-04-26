@@ -1,0 +1,43 @@
+[
+    {
+        "title": "home",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "shop",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "about",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "gallery",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "locations",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "journal",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "contact",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "my account",
+        "isHover": false,
+        "isActive": false
+    }
+    
+]

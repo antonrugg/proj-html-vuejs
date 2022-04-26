@@ -1,15 +1,21 @@
 <template>
   <footer>
-    FOOTER
+    <FooterNavBarComponent :footerLinks="footerLinks"/>
   </footer>
 </template>
 
 <script>
+import FooterNavBarComponent from '@/components/FooterNavBarComponent.vue'
+
 export default {
   name: 'FooterComponent',
+  components:{
+    FooterNavBarComponent,
+  },
   props: {
-    
+    footerLinks: Array,
   }
+  
 }
 </script>
 

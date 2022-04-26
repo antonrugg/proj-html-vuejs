@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <HeaderComponent />
+    <HeaderComponent :headerLinks="headerLinks" />
     <MainComponent />
-    <FooterComponent />
+    <FooterComponent :footerLinks="footerLinks"/>
   </div>
 </template>
 
@@ -10,9 +10,23 @@
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import MainComponent from '@/components/MainComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+//imported components
+
+import headerLinks from '@/assets/data/header-nav'
+import footerLinks from '@/assets/data/footer-nav'
+//imported json datas
+
 
 export default {
+   
+
   name: 'App',
+  data(){
+    return{
+      headerLinks,
+      footerLinks
+    }
+  },
   components: {
     HeaderComponent,
     MainComponent,
@@ -22,6 +36,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '@/styles/generals.scss' ;
+  @import '@/styles/generals.scss';
+ 
 
 </style>

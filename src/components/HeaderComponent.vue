@@ -1,14 +1,19 @@
 <template>
   <header>
-    HEADER
+    <HeaderNavBarComponent :headerLinks="headerLinks"/>
   </header>
 </template>
 
 <script>
+import HeaderNavBarComponent from '@/components/HeaderNavBarComponent.vue'
+
 export default {
   name: 'HeaderComponent',
+  components:{
+    HeaderNavBarComponent
+  },
   props: {
-    
+    headerLinks: Array,
   }
 }
 </script>

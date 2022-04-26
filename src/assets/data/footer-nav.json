@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Shop",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "About",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "Gallery",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "Locations",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "Journal",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "Contact",
+        "isHover": false,
+        "isActive": false
+    },
+    {
+        "title": "Orders",
+        "isHover": false,
+        "isActive": false
+    }
+]
