@@ -2,36 +2,43 @@
     {
         "title": "Shop",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 1
     },
     {
         "title": "About",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 2
     },
     {
         "title": "Gallery",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 3
     },
     {
         "title": "Locations",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 4
     },
     {
         "title": "Journal",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 5
     },
     {
         "title": "Contact",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 6
     },
     {
         "title": "Orders",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 7
     }
 ]

@@ -2,42 +2,50 @@
     {
         "title": "home",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 1
     },
     {
         "title": "shop",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 2
     },
     {
         "title": "about",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 3
     },
     {
         "title": "gallery",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 4
     },
     {
         "title": "locations",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 5
     },
     {
         "title": "journal",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 6
     },
     {
         "title": "contact",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 7
     },
     {
         "title": "my account",
         "isHover": false,
-        "isActive": false
+        "isActive": false,
+        "id": 8
     }
     
 ]
