@@ -17,12 +17,13 @@
 
     <SpecialMomentSection />
 
-    <ProductsShopComponent :textSections="textSections"/>
+    <ProductsShopComponent :textSections="textSections" />
 
-    <BigPanelSection />
+    <BigPanelSectionOne />
 
     <DoublePanelSection />
 
+    <BigPanelSectionThree />
   </main>
 </template>
 
@@ -31,8 +32,9 @@ import CarouselComponent from "./CarouselComponent.vue";
 import SpecialMomentComponent from "./SpecialMomentComponent.vue";
 import SpecialMomentSection from "./SpecialMomentSection.vue";
 import ProductsShopComponent from "./ProductsShopComponent.vue";
-import BigPanelSection from "./BigPanelSection.vue";
+import BigPanelSectionOne from "./BigPanelSectionOne.vue";
 import DoublePanelSection from "./DoublePanelSection.vue";
+import BigPanelSectionThree from "./BigPanelSectionThree.vue";
 
 
 export default {
@@ -42,8 +44,9 @@ export default {
     SpecialMomentComponent,
     SpecialMomentSection,
     ProductsShopComponent,
-    BigPanelSection,
+    BigPanelSectionOne,
     DoublePanelSection,
+    BigPanelSectionThree,
   },
   data() {
     return {};

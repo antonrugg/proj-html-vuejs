@@ -16,7 +16,7 @@
       </div>
       <div class="right-panel">
           <p class="over-text">dont just take our word for it</p>
-          <h3 class="title">“Finalli found an alternative to the mass produced products. Something that incorporates real organiz ingredients, nutrient dense wellness while promoting sustainability and activity.”</h3>
+          <h3 class="title">“Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity.”</h3>
           <p class="signature">Rachel Cooper, Founder</p>
       </div>
   </section>
@@ -36,6 +36,7 @@ section{
     display: flex;
     justify-content: space-between;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     margin: auto 2.5%;
 
      .over-text{
