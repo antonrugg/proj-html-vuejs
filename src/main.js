@@ -9,6 +9,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faRectangleList } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 // brand icons
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -22,7 +23,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-library.add(faCartShopping, faRectangleList, faInstagram, faTwitter, faFacebookF, faPinterestP, faChevronRight, faChevronLeft)
+library.add(faCartShopping, faRectangleList, faInstagram, faTwitter, faFacebookF, faPinterestP, faChevronRight, faChevronLeft, faChevronUp)
 
 Vue.config.productionTip = false
 

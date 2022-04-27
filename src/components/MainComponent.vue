@@ -8,29 +8,18 @@
         <button class="btn btn-main">{{ textSections[1].buttonText }}</button>
       </div>
 
-      <div class="carousel">
-        <CarouselComponent :carouselItems="carouselItems" />
-      </div>
+      <CarouselComponent :carouselItems="carouselItems" />
     </section>
 
     <SpecialMomentComponent />
-
     <SpecialMomentSection />
-
     <ProductsShopComponent :textSections="textSections" />
-
     <BigPanelSectionOne />
-
     <DoublePanelSection />
-
     <BigPanelSectionThree />
-
     <VisitUsComponent />
-
     <VisitUsMain />
-
     <StayInTouch />
-
     <TrySeasonalSection />
   </main>
 </template>
@@ -47,7 +36,6 @@ import VisitUsComponent from "./VisitUsComponent.vue";
 import VisitUsMain from "./VisitUsMain.vue";
 import StayInTouch from "./StayInTouch.vue";
 import TrySeasonalSection from "./TrySeasonalSection.vue";
-
 
 export default {
   name: "MainComponent",
