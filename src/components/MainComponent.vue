@@ -24,6 +24,14 @@
     <DoublePanelSection />
 
     <BigPanelSectionThree />
+
+    <VisitUsComponent />
+
+    <VisitUsMain />
+
+    <StayInTouch />
+
+    <TrySeasonalSection />
   </main>
 </template>
 
@@ -35,6 +43,10 @@ import ProductsShopComponent from "./ProductsShopComponent.vue";
 import BigPanelSectionOne from "./BigPanelSectionOne.vue";
 import DoublePanelSection from "./DoublePanelSection.vue";
 import BigPanelSectionThree from "./BigPanelSectionThree.vue";
+import VisitUsComponent from "./VisitUsComponent.vue";
+import VisitUsMain from "./VisitUsMain.vue";
+import StayInTouch from "./StayInTouch.vue";
+import TrySeasonalSection from "./TrySeasonalSection.vue";
 
 
 export default {
@@ -47,6 +59,10 @@ export default {
     BigPanelSectionOne,
     DoublePanelSection,
     BigPanelSectionThree,
+    VisitUsComponent,
+    VisitUsMain,
+    StayInTouch,
+    TrySeasonalSection,
   },
   data() {
     return {};
