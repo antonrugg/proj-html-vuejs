@@ -1,26 +1,38 @@
 [
     {
-        "src": "choco-chip-cookies-500x638.jpg",
-        "isHover": false,
+        "src": "images/choco-chip-cookies-500x638.jpg",
         "isActive": false,
-        "id": 0
+        "id": 0,
+        "title": "Choco Chip Cookies",
+        "underText": "Cookies, Pastries",
+        "lowerPrice": "$19.00",
+        "higherPrice": "$39.00"
     },
     {
         "src": "images/strawberry-jam-cookies-500x638.jpg",
-        "isHover": false,
         "isActive": false,
-        "id": 1
+        "id": 1,
+        "title": "Strawberyy Jam Cookies",
+        "underText": "Cookies, Pastries",
+        "lowerPrice": "$15.00",
+        "higherPrice": "$32.00"
     },
     {
         "src": "images/cookies-with-icecream-500x638.jpg",
-        "isHover": false,
         "isActive": false,
-        "id": 2
+        "id": 2,
+        "title": "Cookies with Icecream",
+        "underText": "Cookies, Pastries",
+        "lowerPrice": "$22.00",
+        "higherPrice": "$37.00"
     },
     {
         "src": "images/home-bread-500x638.jpg",
-        "isHover": false,
         "isActive": false,
-        "id": 3
+        "id": 3,
+        "title": "Home Bread",
+        "underText": "Bread, Bakery",
+        "lowerPrice": "$12.00",
+        "higherPrice": "$21.00"
     }
 ]

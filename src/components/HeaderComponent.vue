@@ -10,7 +10,7 @@
         <p class="over-title">{{ textSections[0].overTitle }}</p>
         <p class="title">{{ textSections[0].title }}</p>
         <p class="text">{{ textSections[0].text }}</p>
-        <button class="btn"> {{ textSections[0].buttonText }} </button>
+        <button class="btn btn-header"> {{ textSections[0].buttonText }} </button>
       </section>
     </div>
 
@@ -145,7 +145,19 @@ header{
             font-size: 11px;
             font-weight: 600;
             margin-top: 0.8rem;
+            cursor: pointer;
         }
+
+      .btn-header{
+        transition: 0.3s ease;
+
+        &:hover{
+          background-color: $title-text-color;
+          color: white;
+          transition: 0.3s ease;
+        }
+      }
+        
     }
 }
 
