@@ -14,7 +14,10 @@
     </section>
 
     <SpecialMomentComponent />
+
     <SpecialMomentSection />
+
+    <ProductsShopComponent :textSections="textSections"/>
   </main>
 </template>
 
@@ -22,6 +25,7 @@
 import CarouselComponent from "./CarouselComponent.vue";
 import SpecialMomentComponent from "./SpecialMomentComponent.vue";
 import SpecialMomentSection from "./SpecialMomentSection.vue";
+import ProductsShopComponent from "./ProductsShopComponent.vue";
 
 
 export default {
@@ -30,6 +34,7 @@ export default {
     CarouselComponent,
     SpecialMomentComponent,
     SpecialMomentSection,
+    ProductsShopComponent,
   },
   data() {
     return {};
