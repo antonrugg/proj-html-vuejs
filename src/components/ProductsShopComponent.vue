@@ -82,6 +82,7 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: auto 5%;
+  padding-bottom: 10rem;
 
 
   p {

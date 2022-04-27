@@ -21,6 +21,8 @@
 
     <BigPanelSection />
 
+    <DoublePanelSection />
+
   </main>
 </template>
 
@@ -30,6 +32,7 @@ import SpecialMomentComponent from "./SpecialMomentComponent.vue";
 import SpecialMomentSection from "./SpecialMomentSection.vue";
 import ProductsShopComponent from "./ProductsShopComponent.vue";
 import BigPanelSection from "./BigPanelSection.vue";
+import DoublePanelSection from "./DoublePanelSection.vue";
 
 
 export default {
@@ -40,6 +43,7 @@ export default {
     SpecialMomentSection,
     ProductsShopComponent,
     BigPanelSection,
+    DoublePanelSection,
   },
   data() {
     return {};
