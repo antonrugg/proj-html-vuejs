@@ -12,8 +12,22 @@
             <font-awesome-icon icon="fa-solid fa-chevron-right" /></div></a>
         <a href="#nowhere"><div class="chevron left-chevron">
             <font-awesome-icon icon="fa-solid fa-chevron-left" /></div></a>    
-        <div class="card" v-for="product in products" :key="product.id">
+        <div class="card"
+         v-for="(product, index) in products" :key="product.id + index"
+         @mouseover="showInfos(index)"
+         @mouseleave="currentlyShowing = null"
+         >
+
+         <div class="img-container">
+         <div class="product-layer" v-if="currentlyShowing === index"></div>
+         <!-- layer toggle added when on hover -->
+
             <img :src="require(`@/assets/images/${product.name}-200x255.jpg`)" :alt="product.name">
+          </div> 
+            <div class="hover-text"  v-if="currentlyShowing === index">
+              <span>select options /</span>
+              <span>quick view</span>
+            </div>
           <div class="product-text">  
             <p class="product-title">{{ product.title }}</p>
             <div>
@@ -60,8 +74,14 @@ export default {
                 prices: '$18.00 - $52.00',
                 id: 4
               },
-          ]
+          ],
+          currentlyShowing: null
       }
+  },
+  methods: {
+      showInfos: function (index){
+      this.currentlyShowing = index;
+    }
   }
 };
 </script>
@@ -163,6 +183,25 @@ export default {
 
 .card{
     transition: transform;
+    position: relative;
+    cursor: pointer;
+
+    .img-container{
+      position: relative;
+          
+    }
+
+    
+    .product-layer {
+      height: 100%;
+      width: 90%;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: -3px;
+      left: 11px;
+    }
+
+  
 }
 
 .chevron {
@@ -185,6 +224,26 @@ export default {
 
 .right-chevron {
   right: -30px;
+}
+
+.hover-text {
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+  right: 30%;
+  top: 30%;
+  bottom: 30%;
+  color: white;
+  display: flex;
+  text-transform: uppercase;
+  width: 90%;
+
+  span {
+    font-family: serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
 }
 
 
