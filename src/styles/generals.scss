@@ -5,11 +5,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 //reset generals
 
 #app{
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .fa-cart-shopping{

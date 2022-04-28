@@ -18,10 +18,10 @@
 
       <div class="icon-container">
         <ul>
-          <li><font-awesome-icon icon="fa-brands fa-instagram" /></li>
-          <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
-          <li><font-awesome-icon icon="fa-brands fa-facebook-f" /></li>
-          <li><font-awesome-icon icon="fa-brands fa-pinterest-p" /></li>
+          <li><a href="#nowhere"><font-awesome-icon icon="fa-brands fa-instagram" /></a></li>
+          <li><a href="#nowhere"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
+          <li><a href="#nowhere"><font-awesome-icon icon="fa-brands fa-facebook-f" /></a></li>
+          <li><a href="#nowhere"><font-awesome-icon icon="fa-brands fa-pinterest-p" /></a></li>
         </ul>
       </div>
     </div>

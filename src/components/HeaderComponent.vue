@@ -67,7 +67,7 @@ header{
     }
 
     .aside-etiquette{
-      position: absolute;
+      position: fixed;
       top: 130px;
       right: 10px;
       background-color: white;
@@ -78,10 +78,11 @@ header{
       text-align: center;
       max-width: 55px;
       min-width: 55px;
+      cursor: pointer;
     }
 
     .aside-etiquette.price{
-      position: absolute;
+      position: fixed;
       top: 185px;
       right: 10px;
       padding: 0.5rem 0.3rem 0.3rem 0.3rem;
