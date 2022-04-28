@@ -1,6 +1,6 @@
 [
     {
-        "src": "images/choco-chip-cookies-500x638.jpg",
+        "src": "choco-chip-cookies",
         "isActive": false,
         "id": 0,
         "title": "Choco Chip Cookies",
@@ -9,7 +9,7 @@
         "higherPrice": "$39.00"
     },
     {
-        "src": "images/strawberry-jam-cookies-500x638.jpg",
+        "src": "strawberry-jam-cookies",
         "isActive": false,
         "id": 1,
         "title": "Strawberyy Jam Cookies",
@@ -18,7 +18,7 @@
         "higherPrice": "$32.00"
     },
     {
-        "src": "images/cookies-with-icecream-500x638.jpg",
+        "src": "cookies-with-ice-cream",
         "isActive": false,
         "id": 2,
         "title": "Cookies with Icecream",
@@ -27,7 +27,7 @@
         "higherPrice": "$37.00"
     },
     {
-        "src": "images/home-bread-500x638.jpg",
+        "src": "home-bread",
         "isActive": false,
         "id": 3,
         "title": "Home Bread",

@@ -1,75 +1,66 @@
 <template>
   <section>
     <div class="card-carousel">
-      <!-- <img :src="'@/assets/images/' + carouselItem.src" alt=""> -->
-      <div class="card-container"
-            @mouseover="isHover = true"
-            @mouseleave="isHover = false">
-            <div class="product-layer" v-show="isHover"></div>
-        <a href="#nowhere"><div class="chevron left-chevron">
-            <font-awesome-icon icon="fa-solid fa-chevron-left" /></div></a>
-        <img
-          src="@/assets/images/choco-chip-cookies-400x510.jpg"
-          alt="choco chip cookies"/>
-          <div class="hover-text" v-show="isHover">
-              
-              <h3>Choco Chip Cookies</h3>
-              <p>Cookies, Pastries</p>
-              <div>
-                  <span>$19.00</span>
-                  <span>$39.00</span>
-              </div>
-          </div>
-      </div>
 
-      <div class="card-container"
-            @mouseover="isHover = true"
-            @mouseleave="isHover = false">
-             
-        
-        <div class="product-layer" v-show="isHover"></div>
-        <a href="#nowhere"><div class="chevron right-chevron">
-            <font-awesome-icon icon="fa-solid fa-chevron-right" /></div></a>
-          
-        <img
-          src="@/assets/images/strawberry-jam-cookies-400x510.jpg"
-          alt="strawberyy jam cookies"/>
-        
-          <div class="hover-text" v-show="isHover">
-              
-              <h3>Strawberyy Jam Cookies</h3>
-              <p>Cookies, Pastries</p>
-              <div>
-                  <span>$15.00</span>
-                  <span>$32.00</span>
-              </div>
-          </div>
-         
-        
+      <a href="#nowhere">
+        <div class="chevron left-chevron">
+          <font-awesome-icon icon="fa-solid fa-chevron-left" />
+        </div>
+      </a>
+      <!-- //chevron left -->
 
+      <a href="#nowhere">
+        <div class="chevron right-chevron">
+          <font-awesome-icon icon="fa-solid fa-chevron-right" />
+        </div>
+      </a>
+      <!-- chevron right -->
+<!-- @mouseleave="isHover = false" -->
+      <div
+        class="card-container"
+        @mouseover="showInfos(index)"
+        
+        v-for="(carouselItem, index) in carouselItems.slice(0, 2)"
+        :key="carouselItem.id + index"
+      >
+      <!-- card container for loop, data in carousel.json -->
+      <!-- taking just first two products with slice method -->
+
+        <div class="product-layer" v-if="currentlyShowing === index"></div>
+        <!-- layer toggle added when on hover -->
+
+        <img
+          :src="require(`@/assets/images/${carouselItem.src}-400x510.jpg`)"
+          alt="choco chip cookies"
+        />
+        <div class="hover-text"  v-if="currentlyShowing === index">
+          <h3>{{ carouselItem.title }}</h3>
+          <p>{{ carouselItem.underText }}</p>
+          <div>
+            <span>{{ carouselItem.lowerPrice }}</span>
+            <span>{{ carouselItem.higherPrice }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-    
-
 export default {
-    
-
   name: "CarouselComponent",
   props: {
     carouselItems: Array,
-    carouselItem: Object,
   },
-  data(){
-      return{
-          isHover: false,
-      }
+  data() {
+    return {
+      currentlyShowing: null
+    };
   },
   methods: {
-
+    showInfos: function (index){
+      this.currentlyShowing = index;
+    }
   },
 };
 </script>
@@ -90,7 +81,7 @@ export default {
 }
 
 .left-chevron {
-  left: 0px;
+  left: 15px;
 }
 
 .right-chevron {
@@ -100,6 +91,7 @@ export default {
 .card-carousel {
   display: flex;
   margin-left: 2rem;
+  position: relative;
   .card-container {
     position: relative;
     margin-left: 1rem;
@@ -115,43 +107,41 @@ export default {
   color: aliceblue;
 }
 
-.hover-text{
-    position: absolute;
-    z-index: 2;
-    left: 30%;
-    right: 20%;
-    top: 40%;
-    bottom: -50%;
-    color: white;
+.hover-text {
+  position: absolute;
+  z-index: 2;
+  left: 30%;
+  right: 20%;
+  top: 40%;
+  bottom: -50%;
+  color: white;
 
-    h3{
-        font-family: serif;
-        font-size: 22px;
-        font-weight: 700;
-    }
+  h3 {
+    font-family: serif;
+    font-size: 22px;
+    font-weight: 700;
+  }
 
-    p{
-        padding: 0.5rem 0rem 1rem 0rem;
-        text-align: center;
-        font-size: 10px;
-    }
+  p {
+    padding: 0.5rem 0rem 1rem 0rem;
+    text-align: center;
+    font-size: 10px;
+  }
 
-    span{
-        font-size: 20px;
-        text-align: center;
-        padding-right: 0.8rem;
-        padding-left: 1rem;
-    }
-
-    
+  span {
+    font-size: 20px;
+    text-align: center;
+    padding-right: 0.8rem;
+    padding-left: 1rem;
+  }
 }
 
-.product-layer{
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+.product-layer {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 </style>
