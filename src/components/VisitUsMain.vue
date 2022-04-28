@@ -1,7 +1,10 @@
 <template>
   <section>
     <div class="city-card bg-ny">
-      <img src="@/assets/images/new-york-bk-800x530.jpg" alt="london location" />
+      <img
+        src="@/assets/images/new-york-bk-800x530.jpg"
+        alt="london location"
+      />
       <div class="bottom-section">
         <p class="title">New York</p>
 
@@ -20,7 +23,6 @@
         </div>
       </div>
     </div>
-   
 
     <div class="city-card bg-lnd">
       <img src="@/assets/images/london-bk-800x530.jpg" alt="london location" />
@@ -57,21 +59,19 @@ section {
   display: flex;
   margin: auto 2.5%;
 
-  .bg-ny{
-      background-color: #f1f9fb;
-    } 
+  .bg-ny {
+    background-color: #f1f9fb;
+  }
 
-    .bg-lnd{
-      background-color: #faf3e3;
-    }
+  .bg-lnd {
+    background-color: #faf3e3;
+  }
 
   .city-card {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 0rem 0rem 3rem 0rem;
-
-    
 
     img {
       width: 100%;
@@ -95,43 +95,41 @@ section {
       display: flex;
       justify-content: space-evenly;
 
-      .sub-section-text{
+      .sub-section-text {
         color: #878691;
         font-size: 10px;
         font-weight: 600;
         text-transform: uppercase;
 
-        p{
+        p {
           padding: 0.5rem 0rem;
           text-align: center;
         }
       }
 
       .btn {
-  background-color: white;
-  padding: 0.4rem 1.4rem;
-  border: none;
-  border-radius: 0.3rem;
-  color: $navbar-text-color;
-  font-size: 11px;
-  font-weight: 600;
-  cursor: pointer;
-}
+        background-color: white;
+        padding: 0.4rem 1.4rem;
+        border: none;
+        border-radius: 0.3rem;
+        color: $navbar-text-color;
+        font-size: 11px;
+        font-weight: 600;
+        cursor: pointer;
+      }
 
-.btn-header {
-  transition: 0.3s ease;
+      .btn-header {
+        transition: 0.3s ease;
 
-  &:hover {
-    background-color: $title-text-color;
-    color: white;
-    transition: 0.3s ease;
-  }
-}
+        &:hover {
+          background-color: $title-text-color;
+          color: white;
+          transition: 0.3s ease;
+        }
+      }
     }
   }
 }
-
-
 </style>
 
 

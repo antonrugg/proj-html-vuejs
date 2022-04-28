@@ -18,10 +18,26 @@
 
       <div class="icon-container">
         <ul>
-          <li><a href="#nowhere"><font-awesome-icon icon="fa-brands fa-instagram" /></a></li>
-          <li><a href="#nowhere"><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
-          <li><a href="#nowhere"><font-awesome-icon icon="fa-brands fa-facebook-f" /></a></li>
-          <li><a href="#nowhere"><font-awesome-icon icon="fa-brands fa-pinterest-p" /></a></li>
+          <li>
+            <a href="#nowhere"
+              ><font-awesome-icon icon="fa-brands fa-instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="#nowhere"
+              ><font-awesome-icon icon="fa-brands fa-twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="#nowhere"
+              ><font-awesome-icon icon="fa-brands fa-facebook-f"
+            /></a>
+          </li>
+          <li>
+            <a href="#nowhere"
+              ><font-awesome-icon icon="fa-brands fa-pinterest-p"
+            /></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -58,7 +74,7 @@ footer {
   justify-content: space-between;
   position: relative;
 
-  .scroll-up{
+  .scroll-up {
     background-color: #474747;
     height: 30px;
     width: 30px;
@@ -69,7 +85,7 @@ footer {
     bottom: 70px;
     right: 0px;
 
-    a{
+    a {
       color: white;
     }
   }
@@ -133,8 +149,6 @@ footer {
 
     .icon-container {
       padding-top: 5rem;
-
-
 
       ul {
         display: flex;

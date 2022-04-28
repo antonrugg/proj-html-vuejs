@@ -1,7 +1,6 @@
 <template>
   <section>
     <div class="card-carousel">
-
       <a href="#nowhere" @click="showPrev">
         <div class="chevron left-chevron">
           <font-awesome-icon icon="fa-solid fa-chevron-left" />
@@ -9,23 +8,22 @@
       </a>
       <!-- //chevron left -->
 
-      <a href="#nowhere"  @click="showNext">
+      <a href="#nowhere" @click="showNext">
         <div class="chevron right-chevron">
           <font-awesome-icon icon="fa-solid fa-chevron-right" />
         </div>
       </a>
       <!-- chevron right -->
-<!-- @mouseleave="isHover = false" -->
+      <!-- @mouseleave="isHover = false" -->
       <div
         class="card-container"
         @mouseover="showInfos(index)"
         @mouseleave="currentlyShowing = null"
-        
         v-for="(carouselItem, index) in carouselItems.slice(min, max)"
         :key="carouselItem.id + index"
       >
-      <!-- card container for loop, data in carousel.json -->
-      <!-- taking just first two products with slice method -->
+        <!-- card container for loop, data in carousel.json -->
+        <!-- taking just first two products with slice method -->
 
         <div class="product-layer" v-if="currentlyShowing === index"></div>
         <!-- layer toggle added when on hover -->
@@ -35,7 +33,7 @@
           alt="choco chip cookies"
         />
         <!-- visible on hover -->
-        <div class="hover-text"  v-if="currentlyShowing === index"> 
+        <div class="hover-text" v-if="currentlyShowing === index">
           <h3>{{ carouselItem.title }}</h3>
           <p>{{ carouselItem.underText }}</p>
           <div>
@@ -60,33 +58,35 @@ export default {
       activeProductIndex: 0,
       min: 0,
       max: 2,
-    }
+    };
   },
   methods: {
     //function to single out hover on card
-    showInfos: function (index){
+    showInfos: function (index) {
       this.currentlyShowing = index;
     },
-    showPrev(){ //function that fires on click of chevron left, to slide across products, decrement slice.method variables
-      if(this.min > 0){
+    showPrev() {
+      //function that fires on click of chevron left, to slide across products, decrement slice.method variables
+      if (this.min > 0) {
         this.min = this.min - 1;
         this.max = this.max - 1;
-      } else{
+      } else {
         this.min = this.carouselItems.length - 2;
         // console.log('min',this.min);
         this.max = this.carouselItems.length;
         // console.log('max', this.max);
       }
     },
-    showNext(){ //function that fires on click of chevron left, to slide across products, increment slice.method variables
-      if(this.max === this.carouselItems.length){
+    showNext() {
+      //function that fires on click of chevron left, to slide across products, increment slice.method variables
+      if (this.max === this.carouselItems.length) {
         this.min = 0;
         this.max = 2;
-      } else{
+      } else {
         this.min = this.min + 1;
         this.max = this.max + 1;
       }
-    }
+    },
   },
 };
 </script>

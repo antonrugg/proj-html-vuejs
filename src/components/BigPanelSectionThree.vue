@@ -36,7 +36,6 @@ section {
   padding: 5rem 5rem 3rem 5rem;
   width: 95%;
   position: relative;
-  
 
   .title-container {
     display: flex;

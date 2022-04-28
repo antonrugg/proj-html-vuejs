@@ -36,8 +36,6 @@ h1 {
   align-items: center;
 }
 
-
-
 .title {
   font-size: 44px;
   font-weight: bold;

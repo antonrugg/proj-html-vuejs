@@ -94,11 +94,9 @@ section {
         width: 120px;
         text-align: center;
 
-        .fa-instagram{
-            padding-right: 0.3rem;
+        .fa-instagram {
+          padding-right: 0.3rem;
         }
-
-
       }
 
       .btn-main {

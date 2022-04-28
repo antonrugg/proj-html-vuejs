@@ -25,22 +25,7 @@ export default {
   name: "BigPanelSectionOne",
   data() {
     return {
-      // panelDatas: [
-      //     {
-      //         title: 'Tell us what you have in mind',
-      //         order: '01',
-      //         overText: 'manual ingredients selection',
-      //         text: 'Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec lorem erat, finibus in velit placerat, rutrum augue.',
-      //         id: 1
-      //     },
-      //     {
-      //         title: 'Delivered to your home',
-      //         order: '03',
-      //         overText: 'baked to order & gift wrapped',
-      //         text: 'Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec lorem erat, finibus in velit placerat, rutrum augue.',
-      //         id: 2
-      //     },
-      // ]
+   
     };
   },
 };

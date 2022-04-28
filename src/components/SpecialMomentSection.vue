@@ -21,18 +21,7 @@
          
       
 
-      <!-- <div class="wrapper-display"
-           @mouseover="showInfos(index)">
-          <img src="@/assets/images/wedding-bg.jpg" alt="events weddings" v-if="currentlyShowing === null">
-          <img src="@/assets/images/wedding-hover-bg.jpg" alt="cake for weddings" v-if="currentlyShowing === index">
 
-
-          <div class="hover-text" v-if="currentlyShowing === index">
-            <p class="over-title">private dining hall</p>
-            <h3 class="title">Weddings & Parties</h3>
-            <button class="btn btn-events">Explore more</button>
-          </div>
-      </div> -->
       
      
   </section>
