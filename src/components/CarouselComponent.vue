@@ -19,6 +19,7 @@
       <div
         class="card-container"
         @mouseover="showInfos(index)"
+        @mouseleave="currentlyShowing = null"
         
         v-for="(carouselItem, index) in carouselItems.slice(0, 2)"
         :key="carouselItem.id + index"
@@ -55,7 +56,7 @@ export default {
   data() {
     return {
       currentlyShowing: null
-    };
+    }
   },
   methods: {
     showInfos: function (index){

@@ -1,35 +1,38 @@
 <template>
   <section>
       <div class="wrapper-display"
-           @mouseover="isHover = true"
-           @mouseleave="isHover = false">
-          <img src="@/assets/images/corporate-bg.jpg" alt="events meetings" v-show="!isHover">
-          <img src="@/assets/images/corporate-hover-bg.jpg" alt="events meetings bakery" v-show="isHover">
-          <img src="" alt="" v-show="isHover">
+           @mouseover="showInfos(index)"
+           @mouseleave="currentlyShowing = null"
+           v-for="(event, index) in events" :key="event.id"
+           >
+           
+           
+          <img :src="require(`@/assets/images/${event.src}-bg.jpg`)" alt="events meetings" v-if="currentlyShowing !== index">
+          <img :src="require(`@/assets/images/${event.src}-hover-bg.jpg`)" alt="events meetings bakery" v-if="currentlyShowing === index">
+         
 
 
-          <div class="hover-text" v-show="isHover">
-            <p class="over-title">International Bakery</p>
-            <h3 class="title">Corporate Events</h3>
-            <button class="btn btn-events">Explore more</button>
+          <div class="hover-text" v-if="currentlyShowing === index">
+            <p class="over-title">{{ event.overTitle }}</p>
+            <h3 class="title">{{ event.title }}</h3>
+            <button class="btn btn-events">{{ event.btnText }}</button>
           </div>
       </div>    
          
       
 
-      <div class="wrapper-display"
-           @mouseover="isHover = true"
-           @mouseleave="isHover = false">
-          <img src="@/assets/images/wedding-bg.jpg" alt="events weddings" v-show="!isHover">
-          <img src="@/assets/images/wedding-hover-bg.jpg" alt="cake for weddings" v-show="isHover">
+      <!-- <div class="wrapper-display"
+           @mouseover="showInfos(index)">
+          <img src="@/assets/images/wedding-bg.jpg" alt="events weddings" v-if="currentlyShowing === null">
+          <img src="@/assets/images/wedding-hover-bg.jpg" alt="cake for weddings" v-if="currentlyShowing === index">
 
 
-          <div class="hover-text" v-show="isHover">
+          <div class="hover-text" v-if="currentlyShowing === index">
             <p class="over-title">private dining hall</p>
             <h3 class="title">Weddings & Parties</h3>
             <button class="btn btn-events">Explore more</button>
           </div>
-      </div>
+      </div> -->
       
      
   </section>
@@ -38,12 +41,20 @@
 <script>
 export default {
     name: 'SpecialMomentSection',
+    props: {
+      events: Array,
+    },
     data(){
       return{
-          isHover: false,
+          currentlyShowing: null
       }
   },
-}
+  methods: {
+    showInfos: function (index){
+      return this.currentlyShowing = index;
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>

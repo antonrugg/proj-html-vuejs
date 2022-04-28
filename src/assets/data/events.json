@@ -1,0 +1,17 @@
+[
+    {
+        "src": "corporate",
+        "overTitle": "International Bakery",
+        "title": "Corporate Events",
+        "btnText": "Explore more",
+        "id": 0
+    },
+    {
+        "src": "wedding",
+        "overTitle": "private dining hall",
+        "title": "Weddings & Parties",
+        "btnText": "Explore more",
+        "id": 1
+    }
+ 
+]

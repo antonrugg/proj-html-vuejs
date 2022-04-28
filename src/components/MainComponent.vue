@@ -12,7 +12,7 @@
     </section>
 
     <SpecialMomentComponent />
-    <SpecialMomentSection />
+    <SpecialMomentSection :events="events" />
     <ProductsShopComponent :textSections="textSections" />
     <BigPanelSectionOne />
     <DoublePanelSection />
@@ -58,6 +58,7 @@ export default {
   props: {
     textSections: Array,
     carouselItems: Array,
+    events: Array,
   },
 };
 </script>
