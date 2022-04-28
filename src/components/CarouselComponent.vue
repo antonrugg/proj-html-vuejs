@@ -146,6 +146,7 @@ export default {
     font-family: serif;
     font-size: 22px;
     font-weight: 700;
+    width: 120%;
   }
 
   p {

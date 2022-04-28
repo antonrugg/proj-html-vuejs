@@ -8,12 +8,12 @@
     </div>
 
     <div class="products-carousel">
-        <a href="#nowhere"><div class="chevron right-chevron">
+        <a href="#nowhere"><div class="chevron right-chevron" @click="showNext">
             <font-awesome-icon icon="fa-solid fa-chevron-right" /></div></a>
-        <a href="#nowhere"><div class="chevron left-chevron">
+        <a href="#nowhere"><div class="chevron left-chevron" @click="showPrev">
             <font-awesome-icon icon="fa-solid fa-chevron-left" /></div></a>    
         <div class="card"
-         v-for="(product, index) in products" :key="product.id + index"
+         v-for="(product, index) in products.slice(min, max)" :key="product.id + index"
          @mouseover="showInfos(index)"
          @mouseleave="currentlyShowing = null"
          >
@@ -25,8 +25,8 @@
             <img :src="require(`@/assets/images/${product.name}-200x255.jpg`)" :alt="product.name">
           </div> 
             <div class="hover-text"  v-if="currentlyShowing === index">
-              <span>select options /</span>
-              <span>quick view</span>
+              <span>select options / quick view</span>
+              
             </div>
           <div class="product-text">  
             <p class="product-title">{{ product.title }}</p>
@@ -74,13 +74,65 @@ export default {
                 prices: '$18.00 - $52.00',
                 id: 4
               },
+              {
+                name: 'small-cupcake',
+                title: 'Small Cupcake',
+                prices: '$10.00 - $20.00',
+                id: 5
+              },
+               {
+                name: 'home-bread',
+                title: 'Home Bread',
+                prices: '$7.00 - $12.00',
+                id: 6
+              },
+               {
+                name: 'glazed-pancake-with-lemon',
+                title: 'Glaze Pancake',
+                prices: '$5.00 - $8.00',
+                id: 7
+              },
+               {
+                name: 'cookies-with-ice-cream',
+                title: 'Cookies with Icre cream',
+                prices: '$2.00 - $5.00',
+                id: 8
+              },
+               {
+                name: 'cherry-cake',
+                title: 'Cherry Cake',
+                prices: '$21.00 - $27.00',
+                id: 9
+              }
           ],
-          currentlyShowing: null
+          currentlyShowing: null,
+          min: 0,
+          max: 4,
       }
   },
   methods: {
       showInfos: function (index){
       this.currentlyShowing = index;
+    },
+      showPrev(){ //function that fires on click of chevron left, to slide across products, decrement slice.method variables
+      if(this.min > 0){
+        this.min = this.min - 1;
+        this.max = this.max - 1;
+      } else{
+        this.min = this.products.length - 4;
+        // console.log('min',this.min);
+        this.max = this.products.length;
+        // console.log('max', this.max);
+      }
+    },
+    showNext(){ //function that fires on click of chevron left, to slide across products, increment slice.method variables
+      if(this.max === this.products.length){
+        this.min = 0;
+        this.max = 4;
+      } else{
+        this.min = this.min + 1;
+        this.max = this.max + 1;
+      }
     }
   }
 };
