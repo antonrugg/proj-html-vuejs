@@ -2,14 +2,14 @@
   <section>
     <div class="card-carousel">
 
-      <a href="#nowhere">
+      <a href="#nowhere" @click="showPrev">
         <div class="chevron left-chevron">
           <font-awesome-icon icon="fa-solid fa-chevron-left" />
         </div>
       </a>
       <!-- //chevron left -->
 
-      <a href="#nowhere">
+      <a href="#nowhere"  @click="showNext">
         <div class="chevron right-chevron">
           <font-awesome-icon icon="fa-solid fa-chevron-right" />
         </div>
@@ -21,7 +21,7 @@
         @mouseover="showInfos(index)"
         @mouseleave="currentlyShowing = null"
         
-        v-for="(carouselItem, index) in carouselItems.slice(0, 2)"
+        v-for="(carouselItem, index) in carouselItems.slice(min, max)"
         :key="carouselItem.id + index"
       >
       <!-- card container for loop, data in carousel.json -->
@@ -34,7 +34,8 @@
           :src="require(`@/assets/images/${carouselItem.src}-400x510.jpg`)"
           alt="choco chip cookies"
         />
-        <div class="hover-text"  v-if="currentlyShowing === index">
+        <!-- visible on hover -->
+        <div class="hover-text"  v-if="currentlyShowing === index"> 
           <h3>{{ carouselItem.title }}</h3>
           <p>{{ carouselItem.underText }}</p>
           <div>
@@ -55,12 +56,36 @@ export default {
   },
   data() {
     return {
-      currentlyShowing: null
+      currentlyShowing: null,
+      activeProductIndex: 0,
+      min: 0,
+      max: 2,
     }
   },
   methods: {
+    //function to single out hover on card
     showInfos: function (index){
       this.currentlyShowing = index;
+    },
+    showPrev(){ //function that fires on click of chevron left, to slide across products, decrement slice.method variables
+      if(this.min > 0){
+        this.min = this.min - 1;
+        this.max = this.max - 1;
+      } else{
+        this.min = this.carouselItems.length - 2;
+        // console.log('min',this.min);
+        this.max = this.carouselItems.length;
+        // console.log('max', this.max);
+      }
+    },
+    showNext(){ //function that fires on click of chevron left, to slide across products, increment slice.method variables
+      if(this.max === this.carouselItems.length){
+        this.min = 0;
+        this.max = 2;
+      } else{
+        this.min = this.min + 1;
+        this.max = this.max + 1;
+      }
     }
   },
 };
