@@ -8,11 +8,11 @@
     </div>
 
     <div class="products-carousel">
-      <a href="#nowhere"
+      <a href="#nowhere" @mouseover="pauseCarousel()" @mouseleave="playCarousel()"
         ><div class="chevron right-chevron" @click="showNext">
           <font-awesome-icon icon="fa-solid fa-chevron-right" /></div
       ></a>
-      <a href="#nowhere"
+      <a href="#nowhere" @mouseover="pauseCarousel()" @mouseleave="playCarousel()"
         ><div class="chevron left-chevron" @click="showPrev">
           <font-awesome-icon icon="fa-solid fa-chevron-left" /></div
       ></a>

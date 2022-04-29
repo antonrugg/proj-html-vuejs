@@ -1,14 +1,14 @@
 <template>
   <section>
     <div class="card-carousel">
-      <a href="#nowhere" @click="showPrev">
+      <a href="#nowhere" @click="showPrev" @mouseover="pauseCarousel()" @mouseleave="playCarousel()">
         <div class="chevron left-chevron">
           <font-awesome-icon icon="fa-solid fa-chevron-left" />
         </div>
       </a>
       <!-- //chevron left -->
 
-      <a href="#nowhere" @click="showNext">
+      <a href="#nowhere" @click="showNext" @mouseover="pauseCarousel()" @mouseleave="playCarousel()">
         <div class="chevron right-chevron">
           <font-awesome-icon icon="fa-solid fa-chevron-right" />
         </div>
