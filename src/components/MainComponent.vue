@@ -1,5 +1,6 @@
 <template>
   <main class="wrapper">
+    <!-- // aside text section, picking the right one with array index -->
     <section class="shopping">
       <div class="text-shopping">
         <p class="over-title">{{ textSections[1].overTitle }}</p>

@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- double panel section with text inside -->
     <div class="left-panel">
       <div class="product-layer"></div>
       <div class="title-container">

@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- //two big panel images that display differently on hover -->
       <div class="wrapper-display"
            @mouseover="showInfos(index)"
            @mouseleave="currentlyShowing = null"
@@ -38,6 +39,7 @@ export default {
           currentlyShowing: null
       }
   },
+  //function firing on hover to single out the element
   methods: {
     showInfos: function (index){
       return this.currentlyShowing = index;

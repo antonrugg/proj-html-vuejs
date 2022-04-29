@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- big panel section with text inside -->
     <div class="product-layer"></div>
     <div class="title-container">
       <h3 class="title">Delivered to your home</h3>

@@ -1,8 +1,9 @@
 <template>
   <section>
+    <!-- top row -->
     <div class="row">
       <div class="img-container">
-        <img src="@/assets/images/social-1.jpg" alt="" />
+        <img src="@/assets/images/social-1.jpg" alt="social bakery" />
       </div>
       <div class="stay-in-touch-container">
         <div class="sub-section-text">
@@ -11,28 +12,29 @@
         <div class="stay-in-touch-title">
           <h3>Let's stay in touch</h3>
         </div>
-
+<!-- button with instagram logo -->
         <button class="btn btn-main">
           <font-awesome-icon icon="fa-brands fa-instagram" />Follow Us
         </button>
       </div>
       <div class="img-container">
-        <img src="@/assets/images/social-2.jpg" alt="" />
+        <img src="@/assets/images/social-2.jpg" alt="social bakery" />
       </div>
     </div>
 
+<!-- //series of images in bottom row -->
     <div class="row">
       <div class="img-container">
-        <img src="@/assets/images/social-3.jpg" alt="" />
+        <img src="@/assets/images/social-3.jpg" alt="social bakery" />
       </div>
       <div class="img-container">
-        <img src="@/assets/images/social-4.jpg" alt="" />
+        <img src="@/assets/images/social-4.jpg" alt="social bakery" />
       </div>
       <div class="img-container">
-        <img src="@/assets/images/social-5.jpg" alt="" />
+        <img src="@/assets/images/social-5.jpg" alt="social bakery" />
       </div>
       <div class="img-container">
-        <img src="@/assets/images/social-6.jpg" alt="" />
+        <img src="@/assets/images/social-6.jpg" alt="social bakery" />
       </div>
     </div>
   </section>

@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- //big panel section with text -->
     <div class="text-container">
       <p class="over-title">try our seasonal products</p>
       <p class="title">Order for pick-up or delivery to your home</p>

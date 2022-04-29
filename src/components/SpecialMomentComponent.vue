@@ -1,5 +1,6 @@
 <template>
   <section class="inter-section">
+    <!-- intersection special moments -->
     <p class="over-title">corporate & weddings</p>
     <h1 class="title inter">Baking Special Moments</h1>
   </section>

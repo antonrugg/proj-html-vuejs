@@ -3,8 +3,9 @@
     <div class="top-header">
       <LogoComponent />
       <HeaderNavBarComponent :headerLinks="headerLinks" />
+      <!-- logo and nav menu components added -->
     </div>
-
+<!-- aside text  -->
     <div class="main-header" :textSections="textSections">
       <section>
         <p class="over-title">{{ textSections[0].overTitle }}</p>
@@ -13,7 +14,7 @@
         <button class="btn btn-header">{{ textSections[0].buttonText }}</button>
       </section>
     </div>
-
+<!-- aside etiquettes with price and demo -->
     <div class="aside-etiquette demos">
       <font-awesome-icon icon="fa-solid fa-rectangle-list fa-2x" />
       <p>Demos</p>

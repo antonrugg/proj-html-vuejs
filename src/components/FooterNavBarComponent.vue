@@ -1,5 +1,6 @@
 <template>
   <nav>
+    <!-- footer navigation menu  -->
     <ul>
       <li v-for="link in footerLinks" :key="link.id">
         <a href="#nowhere">{{ link.title }}</a>

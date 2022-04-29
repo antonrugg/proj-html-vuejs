@@ -3,6 +3,7 @@
     <div class="footer-left">
       <LogoComponent />
       <FooterNavBarComponent :footerLinks="footerLinks" />
+      <!-- logo and nav menu added footer -->
       <div class="copyrights">
         <p>
           © Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights
@@ -10,7 +11,7 @@
         </p>
       </div>
     </div>
-
+<!-- footer right section with newsletter, input text and icons -->
     <div class="footer-right">
       <p class="title">Subscribe to our Newsletter</p>
       <input type="email" placeholder="Enter email address*" />
@@ -41,7 +42,7 @@
         </ul>
       </div>
     </div>
-
+<!-- chevron up -->
     <div class="scroll-up">
       <a href=""><font-awesome-icon icon="fa-solid fa-chevron-up" /></a>
     </div>

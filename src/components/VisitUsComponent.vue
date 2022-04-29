@@ -1,4 +1,5 @@
 <template>
+<!-- intersection visit our Bakeries -->
   <section class="inter-section">
     <p class="over-title">locations</p>
     <h1 class="title inter">Visit our Bakeries</h1>

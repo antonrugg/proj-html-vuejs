@@ -54,6 +54,7 @@ export default {
   },
   data() {
     return {
+      //products data in carousel
       products: [
         {
           name: "choco-chip-cookies",
@@ -132,7 +133,7 @@ export default {
       }
     },
     showNext() {
-      //function that fires on click of chevron left, to slide across products, increment slice.method variables
+      //function that fires on click of chevron left, to slide across products, increment and set slice.method variables min and max
       if (this.max === this.products.length) {
         this.min = 0;
         this.max = 4;

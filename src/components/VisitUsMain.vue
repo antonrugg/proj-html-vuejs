@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- single card ny -->
     <div class="city-card bg-ny">
       <img
         src="@/assets/images/new-york-bk-800x530.jpg"
@@ -24,6 +25,7 @@
       </div>
     </div>
 
+<!-- single card london -->
     <div class="city-card bg-lnd">
       <img src="@/assets/images/london-bk-800x530.jpg" alt="london location" />
       <div class="bottom-section">
