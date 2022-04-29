@@ -18,6 +18,7 @@
       <div
         class="card-container"
         @mouseover="showInfos(index)"
+        @mouseout="playCarousel()"
         @mouseleave="currentlyShowing = null"
         v-for="(carouselItem, index) in carouselItems.slice(min, max)"
         :key="carouselItem.id + index"
@@ -60,10 +61,14 @@ export default {
       max: 2,
     };
   },
+  mounted: function () {
+        this.playCarousel()
+    },
   methods: {
     //function to single out hover on card
     showInfos: function (index) {
       this.currentlyShowing = index;
+      this.pauseCarousel();
     },
     showPrev() {
       //function that fires on click of chevron left, to slide across products, decrement slice.method variables
@@ -87,6 +92,12 @@ export default {
         this.max = this.max + 1;
       }
     },
+     playCarousel(){
+            this.interval = setInterval(() => { this.showNext() }, 3000)
+        },
+      pauseCarousel() {
+        clearInterval(this.interval)
+      },
   },
 };
 </script>

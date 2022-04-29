@@ -21,6 +21,7 @@
         v-for="(product, index) in products.slice(min, max)"
         :key="product.id + index"
         @mouseover="showInfos(index)"
+        @mouseout="playCarousel()"
         @mouseleave="currentlyShowing = null"
       >
         <div class="img-container">
@@ -116,9 +117,13 @@ export default {
       max: 4,
     };
   },
+  mounted: function () {
+        this.playCarousel()
+    },
   methods: {
     showInfos: function (index) {
       this.currentlyShowing = index;
+      this.pauseCarousel();
     },
     showPrev() {
       //function that fires on click of chevron left, to slide across products, decrement slice.method variables
@@ -142,6 +147,12 @@ export default {
         this.max = this.max + 1;
       }
     },
+     playCarousel(){
+            this.interval = setInterval(() => { this.showNext() }, 3000)
+        },
+      pauseCarousel() {
+        clearInterval(this.interval)
+      },
   },
 };
 </script>
