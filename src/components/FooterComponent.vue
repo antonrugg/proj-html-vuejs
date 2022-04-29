@@ -44,7 +44,7 @@
     </div>
 <!-- chevron up -->
     <div class="scroll-up">
-      <a href=""><font-awesome-icon icon="fa-solid fa-chevron-up" /></a>
+      <a href="#home"><font-awesome-icon icon="fa-solid fa-chevron-up" /></a>
     </div>
   </footer>
 </template>

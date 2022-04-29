@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="home">
     <div class="top-header">
       <LogoComponent />
       <HeaderNavBarComponent :headerLinks="headerLinks" />
